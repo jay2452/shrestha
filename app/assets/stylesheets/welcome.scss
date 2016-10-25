@@ -1,0 +1,22 @@
+
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.logo {
+  color: #0f9e00;
+  font-size: 200px;
+}
+
+.logo-small {
+  color: #0f9e00;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4{
+    text-align: center;
+    margin: 25px 0;
+  }
+}
