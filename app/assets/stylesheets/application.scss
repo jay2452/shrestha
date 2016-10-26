@@ -81,6 +81,8 @@ footer .glyphicon {
   color: #0f9e00;
 }
 
+
+
 h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -98,6 +100,22 @@ h4 {
 }
 
 
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.logo {
+  color: #0f9e00;
+  font-size: 200px;
+}
+
+.logo-small {
+  color: #0f9e00;
+  font-size: 50px;
+}
+
+
+
 .slideanim {visibility:hidden;}
 .slide {
     /* The name of the animation */
@@ -109,6 +127,14 @@ h4 {
     /* Make the element visible */
     visibility: visible;
 }
+
+@media screen and (max-width: 768px) {
+  .col-sm-4{
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 @keyframes slide {
