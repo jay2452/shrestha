@@ -1,6 +1,6 @@
-$PUMA_CONFIG_FILE=/home/shrestha/apps/shrestha/current/config/puma.rb
-$PUMA_PID_FILE=/home/shrestha/apps/shrestha/shared/tmp/pids/puma.pid
-$PUMA_SOCKET=/home/shrestha/apps/shrestha/tmp/sockets/puma.sock
+PUMA_CONFIG_FILE=/home/shrestha/apps/shrestha/current/config/puma.rb
+PUMA_PID_FILE=/home/shrestha/apps/shrestha/shared/tmp/pids/puma.pid
+PUMA_SOCKET=/home/shrestha/apps/shrestha/tmp/sockets/puma.sock
 
 # check if puma process is running
 puma_is_running() {
