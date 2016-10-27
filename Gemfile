@@ -53,3 +53,4 @@ gem "font-awesome-rails"
 
 
 gem 'mina'
+gem 'mina-puma'
