@@ -9,5 +9,7 @@ class WelcomeController < ApplicationController
    :to => "jay2452@live.com, jayantt@hotmail.com, jayant2452@gmail.com",
    :subject => "Contact Enquirey",
    :text => "Name: #{params["name"]}\nEmail : #{params[:email]} \n #{params["comments"]}"
+
+   redirect_to :back, notice: "Sent !!, we will be contacting you shortly"
   end
 end
