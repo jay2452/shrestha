@@ -139,25 +139,28 @@
     <div class="col-sm-7">
       <div class="row">
 
-        <div class="col-sm-6">
-          <div class="form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <%= form_tag welcome_send_mail_path, method: :post do  %>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <%= text_field_tag :name, nil, {placeholder: "Name", required: true, class: "form-control"} %>
+            </div>
           </div>
-        </div>
 
-        <div class="col-sm-6">
-          <div class="form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <%= email_field_tag :email, nil, {placeholder: "Email", required: true, class: "form-control"} %>
+            </div>
           </div>
-        </div>
 
-        <div class="col-sm-12 form-group">
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-        </div>
+          <div class="col-sm-12 form-group">
+            <%= text_area_tag :comments, nil, {placeholder: "Comments", required: true, class: "form-control", rows: "6"} %>
+          </div>
 
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
+          <div class="col-sm-12 form-group">
+            <%= submit_tag "Send", class: "btn btn-default pull-right" %>
+          </div>
+        <% end %>
+
       </div>
     </div>
   </div>
