@@ -6,9 +6,9 @@ class ContactMailer < ApplicationMailer
   #   en.contact_mailer.contact_notification.subject
   #
   def contact_notification(name, email, comments)
-    @name = name
-    @email = email
-    @comments = comments
+    @name = name.to_s
+    @email = email.to_s
+    @comments = comments.to_s
     mail to: "jay2452@live.com, jayantt@hotmail.com, 1305033@kiit.ac.in"
   end
 end
