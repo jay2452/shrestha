@@ -57,3 +57,4 @@ gem 'mailgun-ruby'
 
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
+gem "recaptcha", require: "recaptcha/rails"

@@ -10,7 +10,10 @@ class WelcomeController < ApplicationController
   #  :subject => "Contact Enquirey",
   #  :text => "Name: #{params["name"]}\nEmail : #{params[:email]} \n #{params["comments"]}")
 
-    ContactMailer.contact_notification(params[:name], params[:email], params[:comments]).deliver
+    if verify_recaptcha
+        ContactMailer.contact_notification(params[:name], params[:email], params[:comments]).deliver
+    end
+
 
    redirect_to :back, notice: "Sent !!, we will be contacting you shortly"
 

@@ -157,7 +157,14 @@
           </div>
 
           <div class="col-sm-12 form-group">
-            <%= submit_tag "Send", class: "btn btn-default pull-right" %>
+            <div class="row">
+              <div class="col-sm-6">
+                <%= recaptcha_tags %>
+              </div>
+              <div class="col-sm-6">
+                <%= submit_tag "Send", class: "btn btn-default btn-lg pull-right" %>
+              </div>
+            </div>
           </div>
         <% end %>
 
